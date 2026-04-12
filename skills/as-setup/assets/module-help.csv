@@ -1,0 +1,11 @@
+canonicalId,moduleName,moduleCode,skillType,skillId,skillName,description,filePath
+as-setup,Abenteuer-Schmiede,as,workflow,bmad-as-setup,Setup,Neues Abenteuer-Projekt einrichten und Rahmen definieren,_bmad/as/skills/as-setup/SKILL.md
+as-spielleiter,Abenteuer-Schmiede,as,agent,bmad-as-spielleiter,Spielleiter,Abenteuerstruktur Akte Szenen Spannungsbögen und Hooks,_bmad/as/skills/spielleiter/SKILL.md
+as-weltenbauer,Abenteuer-Schmiede,as,agent,bmad-as-weltenbauer,Weltenbauer,Schauplätze Regionen Atmosphäre und kultureller Kontext,_bmad/as/skills/weltenbauer/SKILL.md
+as-nsc-schmied,Abenteuer-Schmiede,as,agent,bmad-as-nsc-schmied,NSC-Schmied,NSC-Erstellung mit DSA5-Werten Persönlichkeit und Motivation,_bmad/as/skills/nsc-schmied/SKILL.md
+as-begegnungsdesigner,Abenteuer-Schmiede,as,agent,bmad-as-begegnungsdesigner,Begegnungsdesigner,Kampf- Sozial- und Erkundungsbegegnungen mit DSA5-Mechaniken,_bmad/as/skills/begegnungsdesigner/SKILL.md
+as-regelwaechter,Abenteuer-Schmiede,as,agent,bmad-as-regelwaechter,Regelwächter,DSA5-Regelkonsistenz Proben Talente Zauber und Werte-Validierung,_bmad/as/skills/regelwaechter/SKILL.md
+as-handout-kuenstler,Abenteuer-Schmiede,as,agent,bmad-as-handout-kuenstler,Handout-Künstler,Spieler-Handouts Briefe Rätsel Karten und In-World-Texte,_bmad/as/skills/handout-kuenstler/SKILL.md
+as-partymodus,Abenteuer-Schmiede,as,agent,bmad-as-partymodus,Partymodus,Interaktiver Spieltest — spiele das Abenteuer durch!,_bmad/as/skills/partymodus/SKILL.md
+as-szenen-balancer,Abenteuer-Schmiede,as,workflow,bmad-as-szenen-balancer,Szenen-Balancer,Pacing- und Balance-Analyse des gesamten Abenteuers,_bmad/as/skills/szenen-balancer/SKILL.md
+as-abenteuer-export,Abenteuer-Schmiede,as,workflow,bmad-as-abenteuer-export,Abenteuer-Export,Export als Markdown Druckformat oder VTT-Format,_bmad/as/skills/abenteuer-export/SKILL.md

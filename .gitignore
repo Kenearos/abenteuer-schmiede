@@ -1,0 +1,22 @@
+# Generated output
+_bmad-output/szenen/
+_bmad-output/handouts/
+_bmad-output/export/
+
+# State files (project-specific)
+zustand/szenen/
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+__pycache__/

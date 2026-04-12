@@ -1,0 +1,45 @@
+code: "as"
+name: "Abenteuer-Schmiede"
+version: "0.1.0"
+description: |
+  BMAD-Modul für KI-gestützte Pen-&-Paper-Abenteuer-Entwicklung im DSA-Stil.
+  Spezialisierte Agenten für Abenteuerstruktur, NSC-Erstellung, Begegnungsdesign,
+  Regelwerk-Konsistenz, Handout-Erstellung und interaktiven Partymodus zum Testen.
+  Wiederverwendbar für beliebig viele Abenteuer.
+author: "Kenearos"
+license: "MIT"
+repository: "https://github.com/Kenearos/abenteuer-schmiede"
+
+config:
+  variables:
+    - name: abenteuer_name
+      type: string
+      description: "Name des Abenteuers"
+    - name: setting
+      type: string
+      description: "Region in Aventurien (z.B. Mittelreich, Horasreich, Thorwal)"
+    - name: epoche
+      type: string
+      description: "Zeitraum (z.B. 1040 BF, Borbaradkrise, Theaterritter)"
+    - name: spieleranzahl
+      type: select
+      options: ["2-3", "3-4", "4-5", "5-6"]
+      description: "Empfohlene Spieleranzahl"
+    - name: erfahrungsstufe
+      type: select
+      options: ["Unerfahren (0-300 AP)", "Durchschnittlich (300-600 AP)", "Erfahren (600-1000 AP)", "Kompetent (1000-1500 AP)", "Meisterlich (1500+ AP)"]
+      description: "Erfahrungsstufe der Helden"
+    - name: abenteuer_typ
+      type: select
+      options: ["Ermittlung", "Intrigue", "Reise", "Dungeon", "Kampagne", "Stadtabenteuer", "Wildnis", "Krieg", "Mystik", "Gemischt"]
+      description: "Art des Abenteuers"
+    - name: geschaetzte_dauer
+      type: select
+      options: ["One-Shot (3-5h)", "Kurz (2-3 Abende)", "Mittel (4-6 Abende)", "Lang (7-12 Abende)", "Kampagne (12+ Abende)"]
+      description: "Geschätzte Spieldauer"
+    - name: sprache
+      type: select
+      options: ["Deutsch", "English"]
+      description: "Sprache des Abenteuers"
+
+dependencies: []
