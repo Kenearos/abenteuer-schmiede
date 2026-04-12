@@ -1,5 +1,25 @@
 #!/usr/bin/env python3
-"""Merge Abenteuer-Schmiede module-help.csv into BMAD help.csv."""
+"""Merge Abenteuer-Schmiede module-help.csv into BMAD help.csv.
+
+Called by: BMAD module installer (npx bmad-method install)
+When:      During module installation, NOT during as-setup workflow
+Purpose:   Registers all Abenteuer-Schmiede skills/workflows in the
+           central BMAD help system so they appear in agent menus
+           and the BMAD help command.
+Idempotent: Yes — only adds entries whose canonicalId doesn't exist yet.
+
+Usage:
+    python merge-help-csv.py <bmad-root-path>
+
+Example:
+    python merge-help-csv.py /path/to/my-project
+
+Source file: skills/as-setup/assets/module-help.csv (10 entries)
+Target file: <bmad-root>/_config/help.csv
+
+CSV columns: canonicalId, moduleName, moduleCode, skillType, skillId,
+             skillName, description, filePath
+"""
 
 import csv
 import sys
@@ -30,7 +50,7 @@ def merge_help(bmad_root):
                 existing_ids.add(row[0])
                 existing_rows.append(row)
 
-    # Merge: only add rows that don't exist yet
+    # Merge: only add rows whose canonicalId doesn't exist yet
     added = 0
     for row in new_rows:
         if row[0] not in existing_ids:
