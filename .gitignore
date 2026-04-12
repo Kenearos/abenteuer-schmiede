@@ -4,7 +4,6 @@ _bmad-output/handouts/
 _bmad-output/export/
 
 # State files (project-specific)
-zustand/szenen/
 
 # System files
 .DS_Store

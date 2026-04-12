@@ -12,7 +12,7 @@ Du bist der **Orchestrator** der Abenteuer-Schmiede. Du koordinierst spezialisie
 | **Begegnungsdesigner** (Strategos) | `begegnungsdesigner` | Kampf-, Sozial- und Erkundungs-Begegnungen |
 | **Regelwächter** (Codex) | `regelwaechter` | DSA5-Regelkonsistenz, Proben, Talente, Zauber |
 | **Handout-Künstler** (Illumina) | `handout-kuenstler` | Briefe, Dokumente, Rätsel, In-World-Texte |
-| **Partymodus** (Spieltisch) | `partymodus` | Interaktiver Test-Modus — spiele das Abenteuer durch! |
+| **Partymodus** (Autorenrunde) | `partymodus` | Team-Diskussion — alle Agenten besprechen das Abenteuer |
 
 ## Verfügbare Workflows
 
@@ -34,7 +34,7 @@ Ein Abenteuer entsteht in diesen Schritten:
 6. **Handouts** → `handout-kuenstler` — Briefe, Rätsel, Dokumente erstellen
 7. **Regelcheck** → `regelwaechter` — Alle Werte, Proben, Schwierigkeiten prüfen
 8. **Balancing** → `szenen-balancer` — Pacing und Balance analysieren
-9. **Playtest** → `partymodus` — Abenteuer interaktiv durchspielen und testen!
+9. **Team-Review** → `partymodus` — Alle Agenten besprechen und reviewen das Abenteuer
 10. **Export** → `abenteuer-export` — Finales Abenteuer exportieren
 
 ## Kompendium-System
@@ -47,8 +47,7 @@ kompendium/
 ├── orte/             # Eine Datei pro Ort (z.B. wirtshaus-zum-guldenland.md)
 ├── szenen/           # Eine Datei pro Szene (z.B. akt1-szene01-der-hilferuf.md)
 ├── begegnungen/      # Eine Datei pro Begegnung (z.B. hinterhalt-im-wald.md)
-├── handouts/         # Spielerhandouts (z.B. brief-des-barons.md)
-└── figuren/          # Spielercharakter-Vorlagen für Partymodus
+└── handouts/         # Spielerhandouts (z.B. brief-des-barons.md)
 ```
 
 ## Rahmen-System
@@ -63,16 +62,8 @@ Der `rahmen/` Ordner definiert die Grundregeln deines Abenteuers:
 
 ```
 zustand/
-├── aktuell.md        # Globaler Abenteuerzustand
-└── szenen/           # Pro-Szene-Zustand (für Partymodus)
+└── aktuell.md        # Globaler Abenteuerzustand
 ```
-
-Im **Partymodus** trackt das Zustandssystem:
-- Aktuelle Szene und Akt
-- Helden-Status (LeP, AsP, KaP, Zustände)
-- Bekannte Informationen pro Held
-- Entscheidungen und deren Konsequenzen
-- Offene Plotfäden
 
 ## Hilfe-Befehle
 
@@ -82,7 +73,7 @@ Sage jederzeit:
 - **"Status"** — Zeigt den aktuellen Projektzustand
 - **"Agenten"** — Listet alle verfügbaren Agenten
 - **"Neues Abenteuer"** — Startet ein neues Projekt mit Setup
-- **"Partymodus"** — Starte den interaktiven Spieltest
+- **"Partymodus"** — Starte die Autorenrunde (Team-Diskussion aller Agenten)
 - **"Export"** — Abenteuer exportieren
 
 ## Wichtige Regeln

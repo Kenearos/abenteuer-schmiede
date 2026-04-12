@@ -49,8 +49,8 @@
 ## Offene Aufgaben
 <!-- Was muss noch gemacht werden? -->
 
-## Partymodus-Ergebnisse
-<!-- Ergebnisse aus Spieltest-Sessions -->
+## Autorenrunde-Notizen
+<!-- Ergebnisse und Beschlüsse aus Team-Diskussionen -->
 
 ## Notizen
 <!-- Ideen, Fragen, Todos -->

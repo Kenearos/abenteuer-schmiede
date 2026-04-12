@@ -4,7 +4,7 @@ version: "0.1.0"
 description: |
   BMAD-Modul für KI-gestützte Pen-&-Paper-Abenteuer-Entwicklung im DSA-Stil.
   Spezialisierte Agenten für Abenteuerstruktur, NSC-Erstellung, Begegnungsdesign,
-  Regelwerk-Konsistenz, Handout-Erstellung und interaktiven Partymodus zum Testen.
+  Regelwerk-Konsistenz und Handout-Erstellung. Mit Autorenrunde für Team-Reviews.
   Wiederverwendbar für beliebig viele Abenteuer.
 author: "Kenearos"
 license: "MIT"
