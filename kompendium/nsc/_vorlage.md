@@ -1,17 +1,17 @@
 # NSC: <!-- NAME -->
 
 > Kopiere diese Vorlage und fülle sie für jeden NSC aus.
-> Lösche Abschnitte die nicht relevant sind (z.B. Zauber für Nicht-Magier).
+> Lösche Abschnitte die nicht relevant sind.
 
 ## Grunddaten
 - **Vollständiger Name**: 
-- **Spezies**: <!-- Mensch/Elf/Zwerg/Halbelf/Halbling/Ork -->
-- **Kultur**: 
-- **Profession**: 
+- **Spezies/Herkunft**: <!-- Gemäß Optionen aus rahmen/system.md -->
+- **Kultur/Background**: 
+- **Profession/Klasse**: 
 - **Geschlecht**: 
 - **Alter**: 
 - **Größe/Gewicht**: 
-- **Sozialstatus**: <!-- 1-21 -->
+- **Sozialstatus**: 
 - **Rolle im Abenteuer**: <!-- Auftraggeber/Antagonist/Verbündeter/Zeuge/Hindernis -->
 
 ## Erscheinung
@@ -36,42 +36,32 @@
 - **Beispiel-Dialog**:
   > "..."
 
-## DSA5-Werte
+## Spielwerte
 
-### Eigenschaften
-| MU | KL | IN | CH | FF | GE | KO | KK |
-|----|----|----|----|----|----|----|-----|
-|    |    |    |    |    |    |    |     |
+> Erstelle die Spielwerte im Format des Systems aus `rahmen/system.md`.
+
+### Attribute
+<!-- Systemspezifische Attribute eintragen.
+     Tabellenformat anpassen an das gewählte System. -->
 
 ### Abgeleitete Werte
-- **LeP**: 
-- **AsP**: <!-- falls magiekundig -->
-- **KaP**: <!-- falls geweiht -->
-- **INI**: + 1W6
-- **GS**: 
-- **SK**: 
-- **ZK**: 
+<!-- Lebenspunkte, Initiative, Geschwindigkeit, Widerstandswerte etc.
+     gemäß den Regeln aus rahmen/system.md -->
 
 ### Kampfwerte
-| Waffe | AT | PA | TP | RW |
-|-------|----|----|----|----|
-|       |    |    |    |    |
+<!-- Angriff, Verteidigung, Schaden, Rüstung
+     im Format des gewählten Systems -->
 
-- **Rüstung**: (RS )
-- **Ausweichen**: 
+### Fertigkeiten / Talente / Skills
+| Fertigkeit | Wert | Anmerkung |
+|------------|------|-----------|
+|            |      |           |
 
-### Wichtige Talente
-| Talent | TaW | Anmerkung |
-|--------|-----|-----------|
-|        |     |           |
+### Besondere Fähigkeiten
+<!-- Sonderfertigkeiten, Feats, Edges, Qualities etc. gemäß System -->
 
-### Sonderfertigkeiten
-- 
-
-### Zauber/Liturgien
-| Zauber/Liturgie | FW | Kosten | Reichweite |
-|-----------------|-----|--------|-----------|
-|                 |     |        |           |
+### Magie / Übernatürliches (falls vorhanden)
+<!-- Zauber, Spells, Powers etc. gemäß System -->
 
 ## Beziehungen
 ### Zu <!-- Name -->

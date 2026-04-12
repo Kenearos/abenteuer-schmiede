@@ -1,8 +1,8 @@
 # Abenteuer-Schmiede
 
-**BMAD-Modul für KI-gestützte Pen-&-Paper-Abenteuer im DSA-Stil**
+**BMAD-Modul für KI-gestützte Pen-&-Paper-Abenteuer**
 
-Schreibe DSA-Abenteuer mit einem Team spezialisierter KI-Agenten — vom Hook bis zum fertigen Abenteuerband. Mit **Autorenrunde** für Team-Reviews!
+Schreibe Pen-&-Paper-Abenteuer mit einem Team spezialisierter KI-Agenten — vom Hook bis zum fertigen Abenteuerband. Systemunabhängig: DSA5, D&D 5e, Pathfinder, Shadowrun und mehr. Mit **Autorenrunde** für Team-Reviews!
 
 ## Was ist das?
 
@@ -14,7 +14,7 @@ Abenteuer-Schmiede ist ein [BMAD](https://github.com/bmadcode/BMAD-METHOD)-Modul
 | **Weltenbauer** (Cartograph) | Geographin | Schauplätze, Regionen, Atmosphäre |
 | **NSC-Schmied** (Persona) | Menschenkennerin | NSCs mit Werten, Motivation, Stimme |
 | **Begegnungsdesigner** (Strategos) | Taktiker | Kampf, Sozial, Erkundung — balanciert |
-| **Regelwächter** (Codex) | DSA5-Experte | Werte, Proben, Regelkonsistenz |
+| **Regelwächter** (Codex) | Regelwerk-Experte | Werte, Proben, Regelkonsistenz |
 | **Handout-Künstler** (Illumina) | Kalligraphin | Briefe, Rätsel, In-World-Texte |
 
 Im **Partymodus** kommen alle Agenten als Autorenrunde zusammen und besprechen das Abenteuer gemeinsam.
@@ -22,7 +22,7 @@ Im **Partymodus** kommen alle Agenten als Autorenrunde zusammen und besprechen d
 ## Features
 
 - **Kompendium-System**: Single Source of Truth für NSCs, Orte, Szenen, Begegnungen
-- **DSA5-Native**: Proben, Qualitätsstufen, Kampfwerte, Zauber, Liturgien
+- **Systemunabhängig**: Unterstützt DSA5, D&D 5e, Pathfinder, Shadowrun und weitere Systeme
 - **Drei-Akt-Struktur** mit flexiblen Fixpunkten und Freiheitsräumen
 - **Partymodus**: Autorenrunde — alle Agenten reviewen und diskutieren dein Abenteuer
 - **Balance-Analyse**: Automatische Prüfung von Pacing, Spielertypen-Abdeckung
@@ -69,9 +69,10 @@ abenteuer-schmiede/
 │   ├── szenen-balancer/      # Balance-Analyse
 │   └── abenteuer-export/     # Export
 ├── rahmen/                   # Abenteuer-Rahmen (pro Projekt befüllt)
-│   ├── setting.md            # Region, Epoche, Kultur
+│   ├── system.md             # Spielsystem-Definition (Attribute, Würfel, Mechaniken)
+│   ├── setting.md            # Spielwelt, Region, Epoche, Kultur
 │   ├── stil.md               # Erzählstil, Atmosphäre
-│   └── regeln.md             # DSA5-Basis + Hausregeln
+│   └── regeln.md             # Hausregeln + Einstellungen
 ├── kompendium/               # Single Source of Truth (pro Projekt befüllt)
 │   ├── nsc/                  # Alle NSCs mit Werten
 │   ├── orte/                 # Alle Schauplätze
@@ -86,7 +87,7 @@ abenteuer-schmiede/
 ## Workflow
 
 ```
-1. Setup       → Rahmen definieren (Region, Ton, Regeln)
+1. Setup       → Spielsystem wählen, Rahmen definieren
 2. Konzept     → Hook, Prämisse, Akt-Struktur
 3. Welt        → Schauplätze ausarbeiten
 4. NSCs        → Alle wichtigen NSCs mit Werten erstellen
@@ -109,15 +110,16 @@ Alle Agenten kommen als Team zusammen und besprechen dein Abenteuer:
 - **Szenen-Workshop** — Eine Szene von allen Seiten durchdenken
 - **Konflikte lösen** — Wenn Atmosphäre und Regelbalance kollidieren
 
-## DSA-Hinweis
+## Spielsystem-Hinweis
 
-Dieses Modul nutzt die Regeln von **Das Schwarze Auge 5. Edition** als Basis. DSA und Das Schwarze Auge sind eingetragene Marken von Ulisses Spiele. Dieses Projekt ist ein inoffizielles Fan-Werkzeug und steht in keiner Verbindung zu Ulisses Spiele.
+Die Abenteuer-Schmiede ist systemunabhängig und unterstützt beliebige Pen-&-Paper-Regelwerke. Das System wird beim Setup in `rahmen/system.md` definiert. Erwähnte Spielsysteme (DSA, D&D, Pathfinder, Shadowrun, etc.) sind Marken ihrer jeweiligen Rechteinhaber. Dieses Projekt steht in keiner Verbindung zu diesen Unternehmen.
 
 ## Contributing
 
 Pull Requests willkommen! Besonders gesucht:
 
-- Regionale Setting-Pakete (Mittelreich, Thorwal, etc.)
+- System-Vorlagen für `rahmen/system.md` (DSA5, D&D 5e, Pathfinder, etc.)
+- Setting-Pakete für verschiedene Spielwelten
 - Zufallstabellen (NSCs, Begegnungen, Schätze)
 - Verbesserungen am Regelwächter
 - VTT-Integration (Foundry, Roll20)

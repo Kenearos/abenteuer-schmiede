@@ -1,37 +1,40 @@
 code: "as"
 name: "Abenteuer-Schmiede"
-version: "0.1.0"
+version: "0.2.0"
 description: |
-  BMAD-Modul für KI-gestützte Pen-&-Paper-Abenteuer-Entwicklung im DSA-Stil.
+  BMAD-Modul für KI-gestützte Pen-&-Paper-Abenteuer-Entwicklung.
   Spezialisierte Agenten für Abenteuerstruktur, NSC-Erstellung, Begegnungsdesign,
   Regelwerk-Konsistenz und Handout-Erstellung. Mit Autorenrunde für Team-Reviews.
-  Wiederverwendbar für beliebig viele Abenteuer.
+  Systemunabhängig — funktioniert mit DSA5, D&D 5e, Pathfinder, Shadowrun und mehr.
 author: "Kenearos"
 license: "MIT"
 repository: "https://github.com/Kenearos/abenteuer-schmiede"
 
 config:
   variables:
+    - name: spielsystem
+      type: string
+      description: "Pen-&-Paper-Regelwerk (z.B. DSA5, D&D 5e, Pathfinder 2e, Shadowrun 6)"
     - name: abenteuer_name
       type: string
       description: "Name des Abenteuers"
     - name: setting
       type: string
-      description: "Region in Aventurien (z.B. Mittelreich, Horasreich, Thorwal)"
+      description: "Spielwelt und Region (z.B. Aventurien/Mittelreich, Forgotten Realms/Sword Coast)"
     - name: epoche
       type: string
-      description: "Zeitraum (z.B. 1040 BF, Borbaradkrise, Theaterritter)"
+      description: "Zeitraum (z.B. 1040 BF, DR 1492, 2080)"
     - name: spieleranzahl
       type: select
       options: ["2-3", "3-4", "4-5", "5-6"]
       description: "Empfohlene Spieleranzahl"
     - name: erfahrungsstufe
       type: select
-      options: ["Unerfahren (0-300 AP)", "Durchschnittlich (300-600 AP)", "Erfahren (600-1000 AP)", "Kompetent (1000-1500 AP)", "Meisterlich (1500+ AP)"]
-      description: "Erfahrungsstufe der Helden"
+      options: ["Anfänger", "Durchschnittlich", "Erfahren", "Veteran", "Meisterlich"]
+      description: "Erfahrungsstufe der Charaktere (Details gemäß Spielsystem)"
     - name: abenteuer_typ
       type: select
-      options: ["Ermittlung", "Intrigue", "Reise", "Dungeon", "Kampagne", "Stadtabenteuer", "Wildnis", "Krieg", "Mystik", "Gemischt"]
+      options: ["Ermittlung", "Intrige", "Reise", "Dungeon", "Kampagne", "Stadtabenteuer", "Wildnis", "Krieg", "Mystik", "Gemischt"]
       description: "Art des Abenteuers"
     - name: geschaetzte_dauer
       type: select

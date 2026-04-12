@@ -4,7 +4,7 @@ skillName: Spielleiter
 skillType: agent
 description: |
   Spezialisierter Agent für Abenteuerstruktur, Akte, Szenen, Spannungsbögen
-  und Abenteuer-Hooks. Erstellt das Grundgerüst eines DSA-Abenteuers nach
+  und Abenteuer-Hooks. Erstellt das Grundgerüst eines Pen-&-Paper-Abenteuers nach
   bewährten dramaturgischen Prinzipien.
 agents:
   - spielleiter

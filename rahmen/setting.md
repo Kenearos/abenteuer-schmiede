@@ -4,9 +4,10 @@
 > Der Weltenbauer und alle anderen Agenten nutzen diese Datei als Basis.
 
 ## Grundeinstellungen
-- **Region**: <!-- z.B. Mittelreich, Horasreich, Thorwal, Tulamidenlande -->
-- **Spezifischer Ort**: <!-- z.B. Gareth, Havena, Festum -->
-- **Epoche**: <!-- z.B. 1040 BF, Borbaradkrise 1027 BF -->
+- **Spielwelt**: <!-- z.B. Aventurien, Forgotten Realms, Sixth World, Golarion -->
+- **Region**: <!-- z.B. Mittelreich, Sword Coast, Seattle, Absalom -->
+- **Spezifischer Ort**: <!-- z.B. Gareth, Waterdeep, Downtown, Sandpoint -->
+- **Epoche**: <!-- z.B. 1040 BF, DR 1492, 2080 -->
 - **Jahreszeit**: <!-- Frühling/Sommer/Herbst/Winter -->
 
 ## Geographie
@@ -15,9 +16,9 @@
 ## Kultur und Gesellschaft
 <!-- Vorherrschende Kulturen, Sitten, Religion, Umgangsformen -->
 
-## Götterverehrung
-<!-- Welche Zwölfgötter werden hier besonders verehrt? -->
-<!-- Gibt es Namenlose-Kulte oder andere Bedrohungen? -->
+## Religion / Überzeugungen
+<!-- Welche Gottheiten/Überzeugungen prägen die Region? -->
+<!-- Gibt es verbotene Kulte oder andere Bedrohungen? -->
 
 ## Politik und Machtverhältnisse
 <!-- Wer herrscht? Welche Konflikte gibt es? Wer hat Einfluss? -->

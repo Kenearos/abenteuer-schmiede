@@ -34,7 +34,7 @@ Ermittlung  ███░░░░░░░░░░░░░  15%
 Dramatisch  █░░░░░░░░░░░░░░░   5%
 ```
 
-**Ideal-Verteilung** (DSA-typisch):
+**Ideal-Verteilung** (empfohlen):
 - Kampf: 20-30%
 - Sozial: 25-35%
 - Erkundung: 15-25%

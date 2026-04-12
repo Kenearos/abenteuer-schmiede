@@ -5,7 +5,7 @@
 ## Rahmendaten
 - **Typ**: <!-- Kampf/Sozial/Erkundung -->
 - **Schwierigkeit**: <!-- Leicht/Mittel/Schwer/Tödlich -->
-- **Empfohlene Gruppenstärke**: <!-- X Helden auf Stufe Y -->
+- **Empfohlene Gruppenstärke**: <!-- X Charaktere auf Stufe Y -->
 - **Geschätzte Dauer**: <!-- Kampfrunden / Minuten -->
 - **Szene**: <!-- Verweis auf kompendium/szenen/ -->
 
@@ -22,24 +22,18 @@
 
 ### <!-- Name --> (x<!-- Anzahl -->)
 
-#### Eigenschaften
-| MU | KL | IN | CH | FF | GE | KO | KK |
-|----|----|----|----|----|----|----|-----|
-|    |    |    |    |    |    |    |     |
+> Erstelle die Werte im Format des Systems aus `rahmen/system.md`.
 
-#### Werte
-- **LeP**: | **INI**: + 1W6 | **GS**: 
-- **RS**: (<!-- Rüstungstyp -->)
+#### Attribute
+<!-- Systemspezifische Attribute -->
 
-#### Kampf
-| Waffe | AT | PA | TP | RW |
-|-------|----|----|----|----|
-|       |    |    |    |    |
+#### Kampfwerte
+<!-- Angriff, Verteidigung, Schaden, Rüstung gemäß System -->
 
-- **Ausweichen**: 
-- **Sonderfertigkeiten**: 
+#### Verhalten
 - **Taktik**: <!-- Wie kämpft er? -->
 - **Moral**: <!-- Wann Flucht/Aufgabe? -->
+- **Besondere Fähigkeiten**: 
 
 ## Dynamischer Ablauf
 - **Beginn**: <!-- Was passiert zuerst? -->
@@ -47,7 +41,7 @@
 - **Wendepunkt**: <!-- Was verändert die Situation? -->
 
 ## Alternative Lösungen
-- **Diplomatie**: <!-- Probe + Modifikator -->
+- **Diplomatie**: <!-- Welche Probe, welche Schwierigkeit? -->
 - **List**: 
 - **Flucht**: <!-- Möglich? Konsequenzen? -->
 - **Umgebung**: <!-- Terrain-Nutzung -->

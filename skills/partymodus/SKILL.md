@@ -35,7 +35,7 @@ Lade die Persona-Definitionen aus den Agent-Dateien in `agents/`:
 | `agents/weltenbauer.agent.yaml` | Cartograph | Orte, Atmosphäre, kulturelle Stimmigkeit |
 | `agents/nsc-schmied.agent.yaml` | Persona | Charaktertiefe, Motivationen, Dialoge |
 | `agents/begegnungsdesigner.agent.yaml` | Strategos | Balance, Taktik, Lösungswege, Herausforderungen |
-| `agents/regelwaechter.agent.yaml` | Codex | DSA5-Korrektheit, Proben, Werte-Konsistenz |
+| `agents/regelwaechter.agent.yaml` | Codex | Regelkonsistenz, Proben, Werte-Konsistenz |
 | `agents/handout-kuenstler.agent.yaml` | Illumina | Spieler-Materialien, Rätsel, In-World-Texte |
 
 Verwende die `persona.identity` und `persona.principles` aus den YAML-Dateien für die In-Character-Antworten. Dupliziere keine Persona-Informationen — die Agent-Dateien sind die Single Source of Truth.

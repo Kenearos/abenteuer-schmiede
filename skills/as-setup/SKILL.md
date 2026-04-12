@@ -4,7 +4,7 @@ skillName: Abenteuer-Schmiede Setup
 skillType: workflow
 description: |
   Setup-Workflow für ein neues Abenteuer-Projekt. Erstellt die Projektstruktur,
-  definiert den Rahmen und bereitet alles für die Entwicklung vor.
+  definiert Spielsystem und Rahmen, bereitet alles für die Entwicklung vor.
 ---
 
 # Abenteuer-Schmiede Setup
@@ -13,31 +13,45 @@ Dieser Workflow richtet ein neues Abenteuer-Projekt ein.
 
 ## Ablauf
 
-### Schritt 1: Projektname und Grundeinstellungen
+### Schritt 1: Spielsystem und Grundeinstellungen
 
 Frage den Nutzer nach:
-1. **Abenteuer-Name**: Wie soll das Abenteuer heißen?
-2. **Region**: Wo in Aventurien spielt es?
-3. **Epoche**: Wann spielt es? (z.B. 1040 BF)
-4. **Abenteuer-Typ**: Ermittlung, Intrige, Reise, Dungeon, etc.
-5. **Spieleranzahl**: Für wie viele Helden?
-6. **Erfahrungsstufe**: Wie erfahren sind die Helden?
-7. **Geschätzte Dauer**: One-Shot bis Kampagne?
-8. **Sprache**: Deutsch oder English?
+1. **Spielsystem**: Welches Regelwerk? (z.B. DSA5, D&D 5e, Pathfinder 2e, Shadowrun 6, Savage Worlds, eigenes System)
+2. **Abenteuer-Name**: Wie soll das Abenteuer heißen?
+3. **Spielwelt/Region**: Wo spielt das Abenteuer? (z.B. Aventurien/Mittelreich, Forgotten Realms/Sword Coast, Sixth World/Seattle)
+4. **Epoche/Zeitraum**: Wann spielt es? (z.B. 1040 BF, DR 1492, 2080)
+5. **Abenteuer-Typ**: Ermittlung, Intrige, Reise, Dungeon, etc.
+6. **Spieleranzahl**: Für wie viele Helden/Charaktere?
+7. **Erfahrungsstufe**: Wie erfahren sind die Charaktere? (Anfänger bis Meisterlich — Details gemäß System)
+8. **Geschätzte Dauer**: One-Shot bis Kampagne?
+9. **Sprache**: Deutsch oder English?
 
 ### Schritt 2: Rahmen erstellen
 
-Erstelle die Rahmen-Dateien:
+Erstelle die Rahmen-Dateien in dieser Reihenfolge:
+
+#### `rahmen/system.md`
+
+Befülle die Systemdefinition basierend auf dem gewählten Spielsystem. Nutze dein Wissen über das System um alle Sektionen auszufüllen:
+- Kernattribute mit Abkürzungen
+- Würfelsystem und Probenmechanik
+- Schwierigkeitsskala
+- Kampfsystem-Überblick
+- Verfügbare Spezies/Herkünfte
+- Charakterfortschritt
+- Magie/Übernatürliches (falls vorhanden)
+- Erfahrungsstufen-Referenz
+- Wichtige Begriffe und Abkürzungen
 
 #### `rahmen/setting.md`
 ```markdown
-# Setting: [Region]
+# Setting: [Region/Spielwelt]
 
 ## Geographie
 <!-- Landschaft, Klima, wichtige Orte -->
 
 ## Kultur
-<!-- Vorherrschende Kulturen, Sitten, Götterverehrung -->
+<!-- Vorherrschende Kulturen, Sitten, Religion/Überzeugungen -->
 
 ## Politik
 <!-- Herrschaftsstrukturen, Konflikte, Allianzen -->
@@ -68,10 +82,10 @@ Erstelle die Rahmen-Dateien:
 - Maximal 5-7 Sätze
 - Mindestens 3 Sinne ansprechen
 - Immer ein interaktives Detail
-- Nie die Reaktion der Helden vorwegnehmen
+- Nie die Reaktion der Charaktere vorwegnehmen
 
 ## Verbotene Klischees
-<!-- Was wollen wir NICHT? Generisches Fantasy? Tolkien-Kopien? -->
+<!-- Was wollen wir NICHT? -->
 ```
 
 #### `rahmen/regeln.md`
@@ -79,26 +93,30 @@ Erstelle die Rahmen-Dateien:
 # Regelwerk-Einstellungen
 
 ## Basis
-- **Regelwerk**: DSA5
-- **Erfahrungsstufe**: [AP-Bereich]
-- **Optionalregeln**: [Welche verwenden?]
+- **Spielsystem**: Siehe `rahmen/system.md`
+- **Erfahrungsstufe**: [Stufe gemäß System]
+- **Optionalregeln**: [Welche systemspezifischen Optionen verwenden?]
 
 ## Hausregeln
 <!-- Abweichungen vom Standardregelwerk -->
 
 ## Proben-Philosophie
-- Kritische Proben (Story-relevant): Eher leichter (0 bis +2)
-- Bonus-Proben (Extra-Info): Normal bis schwer (0 bis -3)
-- Heldentaten: Schwer bis meisterlich (-3 bis -7)
+- Kritische Proben (Story-relevant): Eher leicht
+- Bonus-Proben (Extra-Info): Normal bis schwer
+- Heldentaten: Schwer bis meisterlich
 
 ## Kampf-Einstellungen
-- **Trefferzonen**: [Ja/Nein]
-- **Wundschwellen**: [Ja/Nein]
+- **Kritische Treffer**: [Ja/Nein]
 - **Vereinfachter Kampf**: [Für Nebenbegegnungen?]
+- **Sonstige Optionen**: [Systemspezifische Kampfoptionen]
 
-## Magie-Einstellungen
-- **Verbreitung**: [Wie häufig ist Magie in der Region?]
-- **Antimagie**: [Gibt es Antimagie-Elemente?]
+## Übernatürliches
+- **Verbreitung**: [Wie häufig ist Magie/Übernatürliches in der Spielwelt?]
+- **Einschränkungen**: [Gibt es besondere Regeln oder Verbote?]
+
+## Belohnungen
+- **Erfahrungspunkte pro Abend**: [Empfehlung gemäß System]
+- **Beute-Richtlinie**: [Großzügig/Normal/Karg]
 ```
 
 ### Schritt 3: Zustand initialisieren

@@ -3,9 +3,9 @@ skillId: bmad-as-nsc-schmied
 skillName: NSC-Schmied
 skillType: agent
 description: |
-  Spezialisierter Agent für NSC-Erstellung mit DSA5-Werten, Persönlichkeit,
+  Spezialisierter Agent für NSC-Erstellung mit Spielwerten, Persönlichkeit,
   Motivation, Sprechmuster und Beziehungen. Erstellt lebendige Charaktere
-  vom Bettler bis zum Erzbösewicht.
+  vom Bettler bis zum Erzbösewicht — für jedes Spielsystem.
 agents:
   - nsc-schmied
 artifacts:
@@ -33,13 +33,19 @@ Deine Prinzipien:
 </persona>
 </agent>
 
+## Vorbereitung
+
+**Bei jedem Einsatz zuerst lesen:**
+1. `rahmen/system.md` — Welches System? Welche Attribute, Spezies, Klassen?
+2. `rahmen/setting.md` — NSCs müssen zur Spielwelt passen
+
 ## Fähigkeiten
 
 ### 1. NSC erstellen (komplett mit Werten)
 
 Erstelle einen vollständigen NSC:
 
-1. Lade `rahmen/setting.md` und existierende NSCs aus `kompendium/nsc/`
+1. Lade `rahmen/system.md`, `rahmen/setting.md` und existierende NSCs aus `kompendium/nsc/`
 2. Erstelle den NSC nach diesem Format:
 
 ```markdown
@@ -47,13 +53,13 @@ Erstelle einen vollständigen NSC:
 
 ## Grunddaten
 - **Vollständiger Name**: [Inkl. Titel, Beinamen]
-- **Spezies**: [Mensch/Elf/Zwerg/Ork/etc.]
-- **Kultur**: [Aventurische Kultur]
-- **Profession**: [Beruf/Klasse]
+- **Spezies/Herkunft**: [Gemäß Optionen aus rahmen/system.md]
+- **Kultur/Background**: [Passend zur Spielwelt]
+- **Profession/Klasse**: [Gemäß System]
 - **Geschlecht**: [m/w/d]
 - **Alter**: [Jahre]
-- **Größe/Gewicht**: [Aventurisch-realistische Werte]
-- **Sozialstatus**: [1-21]
+- **Größe/Gewicht**: [Passend zur Spezies]
+- **Sozialstatus**: [Passend zum Setting]
 - **Rolle im Abenteuer**: [Auftraggeber/Antagonist/Verbündeter/Zeuge/Hindernis/etc.]
 
 ## Erscheinung
@@ -79,43 +85,29 @@ Erstelle einen vollständigen NSC:
 - **Beispiel-Dialog**:
   > "[Typischer Satz den dieser NSC sagen würde]"
 
-## DSA5-Werte
+## Spielwerte
 
-### Eigenschaften
-| MU | KL | IN | CH | FF | GE | KO | KK |
-|----|----|----|----|----|----|----|-----|
-| __ | __ | __ | __ | __ | __ | __ | __  |
+> Erstelle die Spielwerte im Format des Systems aus `rahmen/system.md`.
+
+### Attribute
+<!-- Tabellenformat gemäß System -->
 
 ### Abgeleitete Werte
-- **LeP**: __
-- **AsP**: __ (falls magiekundig)
-- **KaP**: __ (falls geweiht)
-- **INI**: __ + 1W6
-- **GS**: __
-- **Schicksalspunkte**: __
-- **Seelenkraft**: __
-- **Zähigkeit**: __
+<!-- Lebenspunkte, Initiative, Geschwindigkeit etc. gemäß System -->
 
 ### Kampfwerte (falls relevant)
-| Waffe | AT | PA | TP | RW |
-|-------|----|----|----|----|
-| ...   | __ | __ | __ | __ |
+<!-- Angriff, Verteidigung, Schaden, Rüstung gemäß System -->
 
-- **Rüstung**: [Typ] (RS __)
-- **Ausweichen**: __
+### Fertigkeiten / Talente / Skills
+| Fertigkeit | Wert | Anmerkung |
+|------------|------|-----------|
+| ...        | __   | ...       |
 
-### Wichtige Talente
-| Talent | TaW | Anmerkung |
-|--------|-----|-----------|
-| ...    | __  | ...       |
+### Besondere Fähigkeiten
+<!-- Sonderfertigkeiten, Feats, Edges etc. gemäß System -->
 
-### Sonderfertigkeiten
-- [Relevante SFs]
-
-### Zauber/Liturgien (falls vorhanden)
-| Zauber/Liturgie | FW | Anmerkung |
-|-----------------|-----|-----------|
-| ...             | __  | ...       |
+### Magie / Übernatürliches (falls vorhanden)
+<!-- Zauber, Spells, Powers etc. gemäß System -->
 
 ## Beziehungen
 ### Zu [Name]
@@ -146,7 +138,7 @@ Erstelle einen vollständigen NSC:
 Erstelle mehrere Kurz-NSCs für eine bestimmte Szene:
 
 1. 3-5 NSCs mit vereinfachten Werten
-2. Jeder NSC: Name, Rolle, 2 Sätze Beschreibung, Kerntalente, ein Spruch
+2. Jeder NSC: Name, Rolle, 2 Sätze Beschreibung, Kernfertigkeiten, ein Spruch
 3. Verbindungen untereinander aufzeigen
 
 ### 3. Antagonist ausarbeiten
@@ -164,17 +156,17 @@ Erstelle einen vollständigen Gegenspieler:
 
 Generiere schnelle NSCs für Improvisation:
 
-1. Spezies + Kultur (passend zur Region)
-2. Profession
+1. Spezies/Herkunft (passend zur Region und zum System)
+2. Profession/Klasse
 3. 3 Persönlichkeitsmerkmale
 4. Ein Geheimnis
 5. Ein markantes äußeres Merkmal
 6. Ein typischer Spruch
-7. Vereinfachte Werte (nur Kern-Talente)
+7. Vereinfachte Werte (nur Kernfertigkeiten)
 
 ## Wichtig
 
-- Lies IMMER `rahmen/setting.md` — NSCs müssen zur Region passen
+- Lies IMMER `rahmen/setting.md` und `rahmen/system.md` — NSCs müssen zur Welt und zum System passen
 - Prüfe existierende NSCs in `kompendium/nsc/` — keine Duplikate, keine Widersprüche
 - Antagonisten bekommen VOLLSTÄNDIGE Werte — sie werden bekämpft
 - Nebenfiguren bekommen RELEVANTE Werte — nur was gebraucht wird

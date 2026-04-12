@@ -14,6 +14,7 @@
 ### Rahmen
 | Element | Status | Datei |
 |---------|--------|-------|
+| Spielsystem | <!-- ✅/❌ --> | `rahmen/system.md` |
 | Setting | <!-- ✅/❌ --> | `rahmen/setting.md` |
 | Erzählstil | <!-- ✅/❌ --> | `rahmen/stil.md` |
 | Regeln | <!-- ✅/❌ --> | `rahmen/regeln.md` |

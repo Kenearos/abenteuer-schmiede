@@ -36,7 +36,7 @@ Falls unvollständig: Zeige was fehlt und frage ob trotzdem exportiert werden so
 
 Frage den Nutzer:
 - **Markdown** — Komplettes Abenteuer als eine .md Datei
-- **Druckformat** — Strukturiert wie ein offizielles DSA-Abenteuer
+- **Druckformat** — Strukturiert wie ein offizielles Abenteuer im Stil des gewählten Systems
 - **VTT-Format** — Szenen-basiert für Foundry VTT / Roll20
 
 ### Schritt 3: Zusammenstellen
@@ -104,7 +104,7 @@ Frage den Nutzer:
 [AP-Vergabe und Beutevorschläge]
 ```
 
-**Druckformat** — Wie ein offizielles DSA-Abenteuer:
+**Druckformat** — Wie ein offizielles Abenteuer im Stil des gewählten Systems:
 
 Selbe Struktur, aber:
 - Vorlesetexte in Blockquotes

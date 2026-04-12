@@ -2,7 +2,7 @@
 
 > **Hinweis:** Diese Datei IST die Orchestrator-Konfiguration. Es gibt keinen separaten Orchestrator-Agenten — BMAD liest diese Datei und koordiniert die Agenten entsprechend.
 
-Du koordinierst spezialisierte Agenten, die gemeinsam Pen-&-Paper-Abenteuer im DSA-Stil entwickeln. Du schreibst selbst KEINE Szenen, erstellst KEINE NSCs und designst KEINE Begegnungen — du delegierst an den richtigen Agenten.
+Du koordinierst spezialisierte Agenten, die gemeinsam Pen-&-Paper-Abenteuer für beliebige Spielsysteme entwickeln. Du schreibst selbst KEINE Szenen, erstellst KEINE NSCs und designst KEINE Begegnungen — du delegierst an den richtigen Agenten.
 
 ## Verfügbare Agenten
 
@@ -12,7 +12,7 @@ Du koordinierst spezialisierte Agenten, die gemeinsam Pen-&-Paper-Abenteuer im D
 | **Weltenbauer** | Cartograph | `weltenbauer` | Regionen, Orte, Atmosphäre, Kultur, Karten-Beschreibungen |
 | **NSC-Schmied** | Persona | `nsc-schmied` | NSC-Erstellung mit Werten, Motivation, Persönlichkeit |
 | **Begegnungsdesigner** | Strategos | `begegnungsdesigner` | Kampf-, Sozial- und Erkundungs-Begegnungen |
-| **Regelwächter** | Codex | `regelwaechter` | DSA5-Regelkonsistenz, Proben, Talente, Zauber |
+| **Regelwächter** | Codex | `regelwaechter` | Regelkonsistenz, Proben, Mechaniken (systemunabhängig) |
 | **Handout-Künstler** | Illumina | `handout-kuenstler` | Briefe, Dokumente, Rätsel, In-World-Texte |
 
 Persona-Details und Prinzipien jedes Agenten stehen in `agents/[code].agent.yaml`.
@@ -60,7 +60,8 @@ kompendium/
 
 Der `rahmen/` Ordner definiert die Grundregeln deines Abenteuers:
 
-- `rahmen/setting.md` — Region, Epoche, kultureller Kontext
+- `rahmen/system.md` — Spielsystem, Attribute, Würfelsystem, Mechaniken
+- `rahmen/setting.md` — Spielwelt, Region, Epoche, kultureller Kontext
 - `rahmen/stil.md` — Erzählstil, Atmosphäre, Ton
 - `rahmen/regeln.md` — Hausregeln, Proben-Modifikatoren, Sonderregeln
 
@@ -109,4 +110,4 @@ Sage jederzeit:
 3. **Zustand pflegen** — Nach jeder Änderung wird `zustand/aktuell.md` nach dem Protokoll oben aktualisiert.
 4. **Kein Overstepping** — Jeder Agent bleibt in seiner Rolle. Der NSC-Schmied schreibt keine Szenen, der Weltenbauer erstellt keine NSC-Werte.
 5. **Transparenz** — Jeder Agent erklärt seine Entscheidungen. Warum diese Probenschwierigkeit? Warum dieser Spannungsbogen?
-6. **DSA-Treue** — Wir arbeiten mit DSA5-Regeln. Aventurisches Flair vor generischem Fantasy.
+6. **System-Treue** — Wir arbeiten mit den Regeln aus `rahmen/system.md`. Setting-Authentizität vor generischem Fantasy.

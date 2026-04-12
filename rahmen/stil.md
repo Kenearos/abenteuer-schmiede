@@ -11,7 +11,7 @@
 ## Atmosphäre
 <!-- Wie soll sich das Abenteuer anfühlen?
      Beispiel: "Wie ein düsterer Krimi im mittelalterlichen Setting — 
-     Nebel, Misstrauen, lange Schatten. Think: Der Name der Rose trifft DSA." -->
+     Nebel, Misstrauen, lange Schatten. Think: Der Name der Rose trifft [Spielwelt]." -->
 
 ## Referenz-Werke
 <!-- Filme, Bücher, Spiele die als Inspiration dienen -->
